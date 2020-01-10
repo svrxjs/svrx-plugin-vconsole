@@ -1,0 +1,42 @@
+{
+  "name": "svrx-plugin-vconsole",
+  "version": "0.0.1",
+  "description": "The svrx plugin for vConsole",
+  "main": "index.js",
+  "keywords": [
+    "svrx",
+    "svrx-plugin",
+    "vconsole"
+  ],
+  "engines": {
+    "svrx": ">=0.0.1"
+  },
+  "author": "C.Y.XU <itsxcy@gmail.com>",
+  "scripts": {
+    "start": "node ./example/start.js",
+    "test": "mocha",
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "vconsole": "^3.3.4"
+  },
+  "devDependencies": {
+    "@svrx/eslint-config": "^1.0.0",
+    "eslint": "^6.2.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3",
+    "mocha": "^6.2.0",
+    "requireg": "^0.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "license": "MIT"
+}
