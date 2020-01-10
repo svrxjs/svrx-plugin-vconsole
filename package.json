@@ -1,6 +1,6 @@
 {
   "name": "svrx-plugin-vconsole",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The svrx plugin for vConsole",
   "main": "index.js",
   "keywords": [
