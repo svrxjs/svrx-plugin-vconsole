@@ -4,7 +4,10 @@ module.exports = {
 
   assets: {
     // script resources
-    script: ['./client.js'],
+    script: [
+      './node_modules/vconsole/dist/vconsole.min.js',
+      './client.js',
+    ],
     // css resources
     style: [],
   },

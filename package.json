@@ -9,7 +9,7 @@
     "vconsole"
   ],
   "engines": {
-    "svrx": ">=0.0.1"
+    "svrx": ">=1.1.0"
   },
   "author": "C.Y.XU <itsxcy@gmail.com>",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@svrx/eslint-config": "^1.0.0",
+    "@svrx/util": "^1.1.4",
     "eslint": "^6.2.0",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.3",
